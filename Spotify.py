@@ -21,26 +21,20 @@ track_id = '6CTWathupIiDs7U4InHnDA'
 r = requests.get(BASE_URL + 'audio-features/' + track_id, headers)
 r = r.json()
 r
-<<<<<<< HEAD
+
 
 print("Json file reading started")
 with open("user.json", "r") as read_file:
-  print("Let's parse this JSON file to python dic.")
-  data = json.load(read_file)
-  print("Decoded Json Data")
-  for key, value in data.items():
-    print(key, ":", value)
-  print("Done with the json file")
-print("JSON Values using Key")
-print(data["name"])
-print(data["member"])
-print(data["playlist"])
-print("Printing key and value")
-
-  
-     
-
-
-
-=======
->>>>>>> 20ce50967ee80567c34cc5d5c8bb09f40637964f
+    print("Let's parse this JSON file to python dic.")
+    data = json.load(read_file)
+    print("Decoded Json Data")
+    for key, value in data.items():
+        print(key, ":", value)
+    print("Done with the json file")
+    print("JSON Values using Key")
+    print(data["name"])
+    print(data["member"])
+    print(data["playlist"])
+    print("Printing key and value")
+# =======
+# >>>>>>> 20ce50967ee80567c34cc5d5c8bb09f40637964f
