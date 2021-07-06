@@ -14,13 +14,14 @@ auth_response_data = auth_response.json()
 auth_response_data
 access_token = auth_response_data['access_token']
 headers = {
-    'Authorization' : 'Bearer {token}'.format(token=access_token)
+    'Authorization': 'Bearer {token}'.format(token=access_token)
 }
 BASE_URL = 'https://api.spotify.com/v1/'
 track_id = '6CTWathupIiDs7U4InHnDA'
-r = requests.get(BASE_URL + 'audio-features/' + track_id, headers = headers)
+r = requests.get(BASE_URL + 'audio-features/' + track_id, headers)
 r = r.json()
 r
+<<<<<<< HEAD
 
 print("Json file reading started")
 with open("user.json", "r") as read_file:
@@ -41,3 +42,5 @@ print("Printing key and value")
 
 
 
+=======
+>>>>>>> 20ce50967ee80567c34cc5d5c8bb09f40637964f
