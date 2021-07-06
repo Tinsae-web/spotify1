@@ -1,5 +1,6 @@
 import requests
 import spotipy
+import json
 CLIENT_ID = 'a5cbd7b7e02d417092d22de329849615'
 CLIENT_SECRET = '58e8d91d7efa4c0fbe43aef36520ccf2'
 AUTH_URL = 'https://accounts.spotify.com/api/token'
@@ -20,6 +21,23 @@ track_id = '6CTWathupIiDs7U4InHnDA'
 r = requests.get(BASE_URL + 'audio-features/' + track_id, headers = headers)
 r = r.json()
 r
+
+print("Json file reading started")
+with open("user.json", "r") as read_file:
+  print("Let's parse this JSON file to python dic.")
+  data = json.load(read_file)
+  print("Decoded Json Data")
+  for key, value in data.items():
+    print(key, ":", value)
+  print("Done with the json file")
+print("JSON Values using Key")
+print(data["name"])
+print(data["member"])
+print(data["playlist"])
+print("Printing key and value")
+
+  
+     
 
 
 

@@ -1,0 +1,14 @@
+{
+   "name": "John Smith",
+   "member": "Premium",
+   "playlist": [
+       "Work out",
+       "Sleepy tunes",
+       "Study music"
+   ],
+   "email": "john@example.com",
+   "Interaction": [
+     "more liked",
+     "Recently played"
+   ]
+}
